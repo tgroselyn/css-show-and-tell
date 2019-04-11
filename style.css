@@ -1,0 +1,55 @@
+body {
+    background-color: antiquewhite;
+    text-align: center;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+@keyframes doSomething {
+    0% {color: red; transform: rotate(0deg);}
+    15% {background-color: orange; transform: rotate(60deg);}
+    30% {background-color: yellow; transform: rotate(120deg);}
+    45% {background-color: green; transform: rotate(180deg);}
+    60% {background-color: blue; transform: rotate(240deg);}
+    75% {background-color: indigo; transform: rotate(300deg);}
+    100% {background-color: violet; transform: rotate(360deg);}
+}
+
+#animatedObject {
+    background-color: red;
+    width: 300px;
+    height: 300px;
+    margin: 150px auto;
+    border-radius: 25%;
+    animation-name: doSomething;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+
+#innerObject {
+        background-color: red;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    border-radius: 25%;
+    animation-name: doSomething;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
+
+#innerInnerObject {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    border-radius: 25%;
+    animation-name: doSomething;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
